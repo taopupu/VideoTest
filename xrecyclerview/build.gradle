@@ -1,6 +1,7 @@
 apply plugin: 'com.android.library'
-//apply plugin: 'com.github.dcendents.android-maven'
-//apply plugin: 'com.jfrog.bintray'
+apply plugin: 'com.github.dcendents.android-maven'
+
+group='com.github.taopupu'
 //
 //version = "1.2.6"
 //group = "com.jcodecraeer"
