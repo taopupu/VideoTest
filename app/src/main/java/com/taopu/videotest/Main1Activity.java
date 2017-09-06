@@ -34,7 +34,7 @@ public class Main1Activity extends BaseActivity implements View.OnClickListener 
     private TextView textView;
     private TextView close;
     private MyVideoView vv_play;
-//ces
+//cesadasda
     //最大录制时间
     private int maxDuration = 8000;
     //本次段落是否录制完成
