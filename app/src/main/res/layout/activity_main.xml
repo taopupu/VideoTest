@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.taopu.videotest.Main1Activity">
+
+
+    <com.taopu.videotest.FocusSurfaceView
+        android:id="@+id/sv_ffmpeg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.taopu.videotest.MyVideoView
+        android:id="@+id/vv_play"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:src="@mipmap/video_delete" />
+
+        <ImageView
+            android:id="@+id/iv_finish"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:src="@mipmap/video_finish" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/close"
+        android:layout_width="50dp"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="15dp"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="#fff"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:id="@+id/rl_bottom2"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/rotia"
+            android:padding="15dp"
+            android:src="@mipmap/video_close" />
+
+        <ImageView
+            android:id="@+id/iv_next"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/rotia"
+            android:padding="15dp"
+            android:src="@mipmap/video_next" />
+    </LinearLayout>
+
+    <com.taopu.videotest.RecordedButton
+        android:id="@+id/rb_start"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="150dp"
+        android:text="长按录制, 抬起暂停"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+</RelativeLayout>
